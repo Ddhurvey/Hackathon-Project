@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #2a7a3a, #4caf50);
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.recipe-card {
+  background: #2c2c2c;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+  background-color: #ffffff5d;
+  color: black;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #4caf50;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h2 {
+  color: #4caf50;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content .calories {
+  font-weight: 600;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+}
+
+.card-content .info {
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+.card-content h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.card-content ul, .card-content ol {
+  padding-left: 25px;
+  margin-bottom: 1rem;
+}
+
+.card-content ul li, .card-content ol li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #d0d0d0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 30px;
+  background: #2a7a3a;
+  color: #fff;
+  font-size: 0.95rem;
+  border-top: 2px solid #4caf50;
+}
